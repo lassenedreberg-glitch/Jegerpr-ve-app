@@ -1,4 +1,4 @@
-const CACHE="jegerproven-v12";
+const CACHE="jegerproven-v13";
 const FILES=["./","./index.html","./questions.js","./shop.js","./multiplayer.js","./multiplayer.css","./manifest.json","./jerven-icon.png","./icon-192.png","./icon-512.png","./game-background.png","./lukas-jerven.png","./jente-jerven.png"];
 
 self.addEventListener("install",event=>{
