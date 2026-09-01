@@ -97,22 +97,22 @@
     <h1>Snu telefonen sidelengs</h1>
     <p>Hold telefonen som en liten spillskjerm.<strong>Spillet åpner automatisk.</strong></p>
   </section>
-  <script src="questions.js?v=1.29"></script>
-  <script src="questions-2.js?v=1.29"></script>
-  <script src="questions-3.js?v=1.29"></script>
-  <script src="questions-4.js?v=1.29"></script>
-  <script src="weapon-diagrams.js?v=1.29"></script>
-  <script src="avatar-builder.js?v=1.29"></script>
-  <script src="question-translations.js?v=1.29"></script>
-  <script src="question-translations-extra.js?v=1.29"></script>
-  <script src="question-translations-nn-full.js?v=1.29"></script>
-  <script src="question-translations-nn-extra.js?v=1.29"></script>
-  <script src="question-translations-nn-extra2.js?v=1.29"></script>
-  <script src="i18n.js?v=1.29"></script>
-  <script src="glossary.js?v=1.29"></script>
-  <script src="shop.js?v=1.29"></script>
-  <link rel="stylesheet" href="multiplayer.css?v=1.29">
-  <link rel="stylesheet" href="clay-game.css?v=1.29">
+  <script src="questions.js?v=1.30"></script>
+  <script src="questions-2.js?v=1.30"></script>
+  <script src="questions-3.js?v=1.30"></script>
+  <script src="questions-4.js?v=1.30"></script>
+  <script src="weapon-diagrams.js?v=1.30"></script>
+  <script src="avatar-builder.js?v=1.30"></script>
+  <script src="question-translations.js?v=1.30"></script>
+  <script src="question-translations-extra.js?v=1.30"></script>
+  <script src="question-translations-nn-full.js?v=1.30"></script>
+  <script src="question-translations-nn-extra.js?v=1.30"></script>
+  <script src="question-translations-nn-extra2.js?v=1.30"></script>
+  <script src="i18n.js?v=1.30"></script>
+  <script src="glossary.js?v=1.30"></script>
+  <script src="shop.js?v=1.30"></script>
+  <link rel="stylesheet" href="multiplayer.css?v=1.30">
+  <link rel="stylesheet" href="clay-game.css?v=1.30">
   <script>
   let shopSpriteLoading=false;
   function ensureShopSprite(){if(document.getElementById("shop-svg-sprite")||shopSpriteLoading)return;shopSpriteLoading=true;fetch(`shop-icons.svg?v=${APP_VERSION}`,{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("ikonfil");return r.text()}).then(text=>{const host=document.createElement("div");host.id="shop-svg-sprite";host.style.cssText="position:absolute;width:0;height:0;overflow:hidden;pointer-events:none";host.innerHTML=text;document.body.prepend(host);document.querySelectorAll("use[data-shop-use]").forEach(u=>u.setAttribute("href",`#${u.dataset.shopUse}`))}).catch(()=>{}).finally(()=>shopSpriteLoading=false)}
@@ -161,11 +161,12 @@
   function simplifyLockText(){document.querySelectorAll(".collection.locked").forEach(b=>{const n=+b.dataset.col,t=`🔒 Svar riktig på 10 spørsmål i samling ${n-1}`;if(b.querySelector("footer")?.textContent!==t)b.querySelector("footer").textContent=t})}
   function combineNextButton(){const success=document.querySelector(".success"),h=success?.querySelector("h2"),b=success?.querySelector("#next");if(!h||!b||b.classList.contains("correct-next"))return;const action=b.textContent.includes("Fullfør")?window.JegerI18n?.t("finish",profile()):window.JegerI18n?.t("next",profile());b.className="correct-next";b.innerHTML=`${h.innerHTML}<small>${action||"Neste"} ›</small>`;h.remove()}
   function applyLanguage(){const p=profile();if(!p)return;document.documentElement.lang=p.language||"nb";const t=window.JegerI18n?.t;if(!t)return;const labels=[["#my-hunter","🧑 "+t("myHunter",p)],["#profiles",(p.appearance?.age==="adult"?"🧑 ":p.avatar==="gutt"?"👦 ":"👧 ")+t("profiles",p)],["#home","⌂ "+t("home",p)]];labels.forEach(([s,x])=>{const b=document.querySelector(s);if(b&&b.textContent!==x)b.textContent=x});document.querySelector(".success>p")?.setAttribute("data-label",t("explanation",p));window.JegerI18n?.localizeDOM(document.getElementById("app"),p.language||"nb")}
-  new MutationObserver(()=>queueMicrotask(()=>{decorateAvatar();decorateDogImages();decorateLoadout();addHuntingRoomCard();addProfileClose();addClayCard();simplifyLockText();combineNextButton();applyLanguage();maybeShowJervenIntro();const s=document.querySelector(".shop-sign small"),t="Kjøp og velg utstyr fra jaktbua";if(s&&s.textContent!==t)s.textContent=t})).observe(document.getElementById("app"),{childList:true,subtree:true});
+  let decorationScheduled=false;
+  new MutationObserver(()=>{if(decorationScheduled)return;decorationScheduled=true;requestAnimationFrame(()=>{decorationScheduled=false;decorateAvatar();decorateDogImages();decorateLoadout();addHuntingRoomCard();addProfileClose();addClayCard();simplifyLockText();combineNextButton();applyLanguage();maybeShowJervenIntro();const s=document.querySelector(".shop-sign small"),nb="Kjøp og velg utstyr fra jaktbua",l=profile()?.language||"nb",t=window.JegerI18n?.phrase(nb,l)||nb;if(s&&s.textContent!==t)s.textContent=t})}).observe(document.getElementById("app"),{childList:true,subtree:true});
   const ICON="jerven-icon.png", BG="game-background.png", BOY="gutt-jerven.png", GIRL="jente-jerven.png", DARK_BOY="gutt-jerven-mork-kroll.png", DARK_GIRL="jente-jerven-mork-kroll.png", MAN="mann-jerven.png", WOMAN="dame-jerven.png";
   const DOG_BREEDS=[{id:"tysk-jaktterrier",name:"Tysk jaktterrier",image:"assets/dogs/tysk-jaktterrier.png"},{id:"norsk-elghund-gra",name:"Norsk elghund grå",image:"assets/dogs/norsk-elghund-gra.png"},{id:"norsk-elghund-sort",name:"Norsk elghund sort",image:"assets/dogs/norsk-elghund-sort.png"},{id:"jamthund",name:"Jämthund",image:"assets/dogs/jamthund.png"},{id:"engelsk-setter",name:"Engelsk setter",image:"assets/dogs/engelsk-setter.png"},{id:"dachshund",name:"Dachshund",image:"assets/dogs/dachshund.png"},{id:"beagle",name:"Beagle",image:"assets/dogs/beagle.png"},{id:"labrador",name:"Labrador retriever",image:"assets/dogs/labrador.png"}];
   function dogArt(p=profile()){return DOG_BREEDS.find(x=>x.id===(p?.dogBreed||"tysk-jaktterrier"))?.image||DOG_BREEDS[0].image}
-  const KEY="jegerproven-save-v2", SCHEMA=2, APP_VERSION="1.29";
+  const KEY="jegerproven-save-v2", SCHEMA=2, APP_VERSION="1.30";
   const collections=[
     [1,"Jakt og holdninger","🌲","Etikk, ansvar og jaktas plass"],[2,"Våpen og våpenlovgivning",shopIcon({icon:"weapon-law",color:"#5b381b"}),"Våpen, ammunisjon og sikkerhet"],[3,"Human og sikker jakt","🛡️","Sikre valg i praktiske situasjoner"],[4,"Skyting med hagle og rifle","🎯","Skyting, avstand og ballistikk"],[5,"Artskunnskap","🫎","Arter og sikre kjennetegn"],[6,"Lover og forskrifter","⚖️","Regler, rettigheter og plikter"],[7,"Jaktformer","🐾","Jaktmetoder, hund og fangst"],[8,"Ettersøk av skadet vilt","🔎","Skuddtegn og ettersøk"],[9,"Håndtering av felt vilt","🥩","Ressursutnyttelse og rapportering"],[10,"Ut på tur","🎒","Ekstra – ikke pensum"]
   ];
