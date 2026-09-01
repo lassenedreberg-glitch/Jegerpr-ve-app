@@ -1,23 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>.f{fill:currentColor}.s{fill:none;stroke:currentColor;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}</style>
-    <symbol id="cap" viewBox="0 0 64 64"><path class="f" d="M10 36c1-16 10-25 24-25 12 0 20 7 22 20-11-4-23-4-34 1 12-1 25 3 34 10-17-3-31-1-42 6-6 4-11-5-4-12z"/></symbol>
-    <symbol id="beanie" viewBox="0 0 64 64"><path class="f" d="M14 37c0-17 7-28 18-28s18 11 18 28H14zm-3 4h42v12c-12 4-28 4-42 0V41z"/><path class="s" d="M25 11c-1 10-1 18 0 26M39 11c1 10 1 18 0 26"/></symbol>
+    <symbol id="cap" viewBox="0 0 64 64"><path class="f" d="M10 34c1-15 10-23 24-23 12 0 20 7 21 20-13-2-26 0-38 6-4 2-8 1-9-1-1-1 0-2 2-2zM17 39c13-8 27-10 41-5 5 2 4 7-1 8-14 2-27 2-40-3z"/><path class="s" d="M33 12v19M16 31c11-5 24-7 39-4"/></symbol>
+    <symbol id="beanie" viewBox="0 0 64 64"><path class="f" d="M14 39c0-18 7-29 18-29s18 11 18 29H14zm-3 3h42v12c-13 4-29 4-42 0V42z"/><path class="s" d="M14 47h36M32 11v7"/></symbol>
     <symbol id="call" viewBox="0 0 64 64"><path class="s" d="M10 29h27l13-9v24l-13-9H10zM17 35v13M9 48h16"/></symbol>
+    <symbol id="call-fox" viewBox="0 0 64 64"><path class="s" d="M8 27h12l5-7h25l7 7v10l-7 7H25l-5-7H8zM25 25v14M48 24v16M11 30h9M11 34h9"/><path class="f" d="M29 28h15v8H29z"/></symbol>
+    <symbol id="call-roe" viewBox="0 0 64 64"><path class="s" d="M28 8h8v10c10 4 16 12 16 22 0 11-9 18-20 18s-20-7-20-18c0-10 6-18 16-22zM24 12h16M20 35c7-4 17-4 24 0M18 43c9-3 19-3 28 0"/><path class="f" d="M29 4h6v9h-6z"/></symbol>
+    <symbol id="call-duck" viewBox="0 0 64 64"><path class="s" d="M8 26h10l5-7h20l5 7h8v16h-8l-5 7H23l-5-7H8zM23 21v26M43 21v26M12 30h8M12 38h8"/><path class="f" d="M27 24h12v20H27z"/></symbol>
+    <symbol id="call-goose" viewBox="0 0 64 64"><path class="s" d="M5 28h12l7-9h25l10 9v12L49 49H24l-7-9H5zM24 22v24M48 22v24M9 32h9M9 36h9"/><path class="f" d="M29 24h14v20H29z"/></symbol>
     <symbol id="backpack" viewBox="0 0 64 64"><path class="s" d="M18 21c0-9 5-14 14-14s14 5 14 14M14 22h36v34H14zM22 22v-7M42 22v-7M14 34h36M23 40h18v12H23z"/></symbol>
-    <symbol id="jacket" viewBox="0 0 64 64"><path class="s" d="M23 9l9 6 9-6 14 11-8 12-5-4v28H22V28l-5 4-8-12zM32 15v41M27 10l5 5 5-5"/></symbol>
+    <symbol id="jacket" viewBox="0 0 64 64"><path class="s" d="M23 10c2-5 5-7 9-7s7 2 9 7l13 9-7 14-5-4v27H22V29l-5 4-7-14zM32 12v44M25 35h6v10h-8M39 35h-6v10h8M23 10l9 8 9-8"/><path class="f" d="M13 20l8-6 5 7-8 7zm33-6 8 6-5 8-8-7zM25 47h5v6h-5zm9 0h5v6h-5z"/></symbol>
+    <symbol id="camo-suit" viewBox="0 0 64 64"><path class="s" d="M18 9c3-4 6-6 10-6s7 2 10 6l10 7-6 12-5-4v17H19V24l-5 4-6-12zM28 14v27M20 41h8l-2 20h-8zm8 0h8l2 20h-8zM22 29h5v7h-6M34 29h-5v7h6"/><path class="f" d="M12 16l7-4 4 6-7 6zm25-4 7 4-4 8-7-6zM20 21l5-3 3 5-5 4zm10 8 5-4 3 6-6 4zM20 46h6l-1 6-6-1zm10 7h7l1 6-7 1z"/></symbol>
     <symbol id="duck" viewBox="0 0 64 64"><path class="f" d="M13 38c5-10 13-15 25-13-1-10 4-17 12-17 5 0 9 3 10 7l-9 4c3 4 4 8 2 12-3 8-12 12-25 12l-5 8-4-9c-5 1-9-1-6-4z"/></symbol>
     <symbol id="goose" viewBox="0 0 64 64"><path class="s" d="M12 44c8-13 19-17 33-10 3 2 7 2 10 1-3 10-12 15-26 15H13zM41 34c-2-11 0-20 7-26 5 1 8 4 9 9l-8 3c-1 6 1 11 6 15"/></symbol>
+    <symbol id="decoy-duck" viewBox="0 0 64 64"><path class="s" d="M8 39c6-10 16-14 29-11 0-8 4-13 11-13 5 0 8 2 10 6l-9 4c5 7 1 17-10 20H10zM28 45v10M20 55h17"/><path class="f" d="M14 35c8-5 16-5 24-2l-5 9H15z"/></symbol>
+    <symbol id="decoy-goose" viewBox="0 0 64 64"><path class="s" d="M8 43c8-12 20-15 34-8 2-11 3-22 12-28 5 2 7 6 6 11l-9 3c-2 6 0 11 6 16-3 10-13 15-29 15H9zM31 52v8M23 60h16"/><path class="f" d="M14 42c8-6 17-7 27-3l-6 10H15z"/></symbol>
+    <symbol id="decoy-owl" viewBox="0 0 64 64"><path class="s" d="M17 13l9 5c4-2 8-2 12 0l9-5-2 13c4 6 5 14 2 22-4 8-9 12-15 12s-11-4-15-12c-3-8-2-16 2-22zM23 30a5 5 0 1 0 0 .1M41 30a5 5 0 1 0 0 .1M26 42l6 5 6-5M32 60v3"/><path class="f" d="M28 36h8l-4 5z"/></symbol>
     <symbol id="binoculars" viewBox="0 0 64 64"><path class="s" d="M12 25l7-14h9l2 15h4l2-15h9l7 14 7 19c2 7-3 13-10 13-5 0-9-3-10-8l-3-10h-8l-3 10c-1 5-5 8-10 8-7 0-12-6-10-13zM7 34h19M38 34h19M28 26h8"/></symbol>
-    <symbol id="radio" viewBox="0 0 64 64"><path class="s" d="M19 17h29v39H19zM25 9h17M42 17V8M25 27h17M25 35h17M32 46a4 4 0 1 0 0 .1"/></symbol>
+    <symbol id="radio" viewBox="0 0 64 64"><path class="s" d="M18 16h30v43H18zM39 16V5M37 5h4M23 11h7M23 23h20v12H23zM25 41h16M25 46h16M25 51h11M14 25h4M14 29h4"/><path class="f" d="M22 7h10v8H22zm5 19h12v6H27z"/></symbol>
     <symbol id="stock" viewBox="0 0 64 64"><path class="f" d="M7 39c14-3 27-10 40-23l10 8-8 10-12-2c-7 9-16 16-28 20-6 2-8-11-2-13z"/></symbol>
     <symbol id="scope" viewBox="0 0 64 64"><path class="s" d="M4 27h8l5-5h30l5 5h8v12h-8l-5 5H17l-5-5H4zM17 24v18M47 24v18M25 22v-5h14v5M32 17V9M27 9h10M23 44v7M41 44v7M19 51h8M37 51h8"/><path class="f" d="M28 25h8v17h-8z"/></symbol>
-    <symbol id="dog-gps" viewBox="0 0 64 64"><path class="s" d="M15 30l-7-8 4-12 12 8h16l12-8 4 12-7 8v17c-5 8-12 12-21 9-8-3-13-8-13-16zM20 34h24M27 43h10"/><rect class="f" x="24" y="29" width="16" height="10" rx="2"/></symbol>
+    <symbol id="weapon-law" viewBox="0 0 64 64"><path class="s" d="M5 35h27l15-15 8 7-12 13H25l-8 9H7c-5 0-6-11-2-14zM30 35l7 9M35 25l8 8"/><rect class="f" x="38" y="35" width="21" height="19" rx="4"/><path class="s" d="M43 35v-5c0-7 11-7 11 0v5M48 44h4M50 44v5"/></symbol>
+    <symbol id="dog-gps" viewBox="0 0 64 64"><path class="s" d="M5 24c17-7 37-7 54 0v17c-17 7-37 7-54 0zM9 27v11M55 27v11M23 20v26"/><rect class="f" x="24" y="19" width="24" height="27" rx="5"/><path class="s" d="M30 26h12v8H30zM36 38h.1M41 19V9M38 9h6"/></symbol>
     <symbol id="gps" viewBox="0 0 64 64"><rect class="s" x="15" y="5" width="34" height="54" rx="7"/><path class="s" d="M22 14h20v25H22zM32 20c-4 0-7 3-7 7 0 6 7 10 7 10s7-4 7-10c0-4-3-7-7-7zM32 47h.1"/></symbol>
     <symbol id="tower" viewBox="0 0 64 64"><path class="s" d="M14 13h36v17H14zM19 30L9 59M45 30l10 29M14 49h36M8 59h48M20 13l12-9 12 9"/></symbol>
     <symbol id="paw" viewBox="0 0 64 64"><path class="f" d="M32 31c9 0 18 10 18 18 0 7-7 9-18 5-11 4-18 2-18-5 0-8 9-18 18-18zM9 23c0-6 4-10 8-10s7 5 6 11c-1 5-5 8-9 7-3-1-5-4-5-8zm17-9c0-7 3-12 7-12s7 5 7 12-3 11-7 11-7-4-7-11zm17 10c-1-6 2-11 6-11s8 4 8 10c0 4-2 7-5 8-4 1-8-2-9-7z"/></symbol>
     <symbol id="cabin" viewBox="0 0 64 64"><path class="s" d="M7 29L32 8l25 21M13 26v31h38V26M25 57V39h14v18M17 32h10M42 32h7"/></symbol>
-    <symbol id="thermal" viewBox="0 0 64 64"><path class="s" d="M10 22h44v27H10zM19 18v35M45 18v35M3 29h7M54 29h7"/><circle class="s" cx="32" cy="35" r="8"/><path class="s" d="M32 30v10M27 35h10"/></symbol>
+    <symbol id="thermal" viewBox="0 0 64 64"><path class="s" d="M8 23h9l7-8h25l8 8v23l-8 8H24l-7-8H8zM17 27v15M49 18v33M8 29H3v11h5"/><circle class="s" cx="36" cy="35" r="11"/><path class="s" d="M36 27v16M28 35h16"/><path class="f" d="M32 31h8v8h-8z"/></symbol>
     <symbol id="trophy" viewBox="0 0 64 64"><path class="s" d="M19 8h26v13c0 11-5 18-13 18s-13-7-13-18zM19 13H8c0 12 5 18 16 18M45 13h11c0 12-5 18-16 18M32 39v10M21 56h22M25 49h14"/></symbol>
   </defs>
 </svg>
