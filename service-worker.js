@@ -1,5 +1,5 @@
-const CACHE="jegerproven-v3";
-const FILES=["./","./index.html","./questions.js","./manifest.json","./jerven-icon.png","./icon-192.png","./icon-512.png","./game-background.png","./lukas-jerven.png","./jente-jerven.png"];
+const CACHE="jegerproven-v8";
+const FILES=["./","./index.html","./questions.js","./shop.js","./manifest.json","./jerven-icon.png","./icon-192.png","./icon-512.png","./game-background.png","./lukas-jerven.png","./jente-jerven.png"];
 
 self.addEventListener("install",event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)));

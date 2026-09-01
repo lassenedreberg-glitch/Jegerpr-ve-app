@@ -1,0 +1,27 @@
+/* Outfitter Shop. ID-er og priser er permanente når varen er tatt i bruk. */
+window.OUTFITTER_ITEMS=[
+  {id:'caps-oransje',name:'Oransje jaktcaps',icon:'🧢',price:40,tier:'Start',type:'Hodeplagg'},
+  {id:'lue-rosa',name:'Rosa jaktlue',icon:'🧶',price:55,tier:'Start',type:'Hodeplagg'},
+  {id:'caps-lilla',name:'Lilla jaktcaps',icon:'🧢',price:65,tier:'Start',type:'Hodeplagg'},
+  {id:'floyte-rev',name:'Revefløyte',icon:'🪈',price:80,tier:'Start',type:'Lokkeutstyr'},
+  {id:'floyte-radyr',name:'Rådyrlokk',icon:'🪈',price:100,tier:'Start',type:'Lokkeutstyr'},
+  {id:'sekk-12',name:'Dagstursekk 12 L',icon:'🎒',price:120,tier:'Start',type:'Sekk'},
+  {id:'kamo-skog',name:'Skogskamo',icon:'🥋',price:160,tier:'Bronse',type:'Klær'},
+  {id:'kamo-fjell',name:'Fjellkamo',icon:'🥋',price:190,tier:'Bronse',type:'Klær'},
+  {id:'lokkefugl-and',name:'Lokkefugl – and',icon:'🦆',price:220,tier:'Bronse',type:'Lokkeutstyr'},
+  {id:'bulvan-gas',name:'Gåsebulvan',icon:'🪿',price:260,tier:'Bronse',type:'Lokkeutstyr'},
+  {id:'sekk-30',name:'Jaktsekk 30 L',icon:'🎒',price:300,tier:'Sølv',type:'Sekk'},
+  {id:'kikkert-8x42',name:'Håndkikkert 8×42',icon:'🔭',price:380,tier:'Sølv',type:'Optikk'},
+  {id:'jaktradio',name:'Jaktradio',icon:'📻',price:450,tier:'Sølv',type:'Elektronikk'},
+  {id:'borsestokk-oransje',name:'Oransje børsestokk',icon:'🟠',price:520,tier:'Sølv',type:'Våpenstil'},
+  {id:'kikkertsikte-1',name:'Kikkertsikte 1–6×',icon:'🎯',price:650,tier:'Gull',type:'Optikk'},
+  {id:'sekk-45',name:'Jaktsekk 45 L',icon:'🎒',price:750,tier:'Gull',type:'Sekk'},
+  {id:'hund-gps',name:'GPS til Jerven',icon:'🐕',price:900,tier:'Gull',type:'Hund'},
+  {id:'jeger-gps',name:'Håndholdt jeger-GPS',icon:'🛰️',price:1100,tier:'Gull',type:'Elektronikk'},
+  {id:'kikkertsikte-2',name:'Kikkertsikte 3–12×',icon:'🎯',price:1350,tier:'Platina',type:'Optikk'},
+  {id:'jakttarn',name:'Jakttårn i tre',icon:'🌳',price:1700,tier:'Platina',type:'Leirplass'},
+  {id:'jerven-premie',name:'Jerven – jaktkameratmerke',icon:'🐾',price:2100,tier:'Platina',type:'Hund'},
+  {id:'jaktbu',name:'Jaktbu',icon:'🛖',price:2800,tier:'Mester',type:'Leirplass'},
+  {id:'termisk-hand',name:'Termisk håndkikkert',icon:'🌡️',price:3800,tier:'Mester',type:'Optikk'},
+  {id:'mesterpakke',name:'Jervens mesterutstyr',icon:'🏆',price:5000,tier:'Legende',type:'Samling'}
+];
