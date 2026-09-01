@@ -1,0 +1,31 @@
+{
+  "rules": {
+    "rooms": {
+      "$roomCode": {
+        ".read": "auth != null",
+        ".write": "auth != null && ((!data.exists() && newData.child('hostUid').val() === auth.uid) || data.child('hostUid').val() === auth.uid)",
+        "players": {
+          "$playerId": {
+            ".write": "auth != null && auth.uid === $playerId"
+          }
+        }
+      }
+    },
+    "questionFeedback": {
+      "$profileId": {
+        ".read": false,
+        "$reportId": {
+          ".write": "auth != null && !data.exists() && newData.child('profileId').val() === $profileId",
+          ".validate": "newData.hasChildren(['profileId','questionId','message','appVersion','status']) && newData.child('message').isString() && newData.child('message').val().length <= 1500"
+        }
+      }
+    },
+    "globalScoreboard": {
+      ".read": "auth != null",
+      "$profileId": {
+        ".write": "auth != null && ((!data.exists() && newData.child('ownerUid').val() === auth.uid) || data.child('ownerUid').val() === auth.uid)",
+        ".validate": "newData.hasChildren(['alias','score','correct','bestStreak','ownerUid']) && newData.child('score').isNumber() && newData.child('score').val() >= 0 && newData.child('correct').isNumber() && newData.child('correct').val() >= 0 && newData.child('bestStreak').isNumber() && newData.child('bestStreak').val() >= 0"
+      }
+    }
+  }
+}
