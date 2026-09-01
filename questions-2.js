@@ -90,7 +90,7 @@ q("7.46",[7],"Hva er en drevlos?",["Hunden gir hals etter vilt i bevegelse","Hun
 q("7.47",[7],"Hvordan arbeider en bandhund på elgjakt?",["Kontrollert i line med føreren","Løs over lange avstander","Ved å apportere"],0,"Bandhunden arbeider i line.");
 q("7.48",[7],"Hvordan arbeider en løshund på elgjakt?",["Søker løs og prøver å stille elgen","Alltid i kort line","Sitter ved sekken"],0,"Løshunden arbeider løs.");
 q("7.49",[7],"Hva betyr apport?",["Finne og bringe felt vilt","Drive elg","Grave felle"],0,"Apportøren henter vilt.");
-q("7.50",[7],"Hva betyr stand hos fuglehund?",["Hunden stanser og markerer fugl","Hunden loser hare","Hunden legger seg i bilen"],0,"Stand viser hvor fuglen er.");
+q("7.50",[7],"Hva betyr stand hos fuglehund?",["Hunden stanser og markerer fugl","Hunden loser hare","Hunden legger seg i bilen"],0,"Hunden stanser og peker med kropp og hode mot fuglen. Jegeren går rolig fram og gjør seg klar før fuglen eventuelt reises. Det skytes først når arten er sikkert bestemt, fuglen er lovlig å jakte, skuddholdet er forsvarlig og retningen er trygg for mennesker og hund.");
 q("7.51",[7],"Hva skiller ofte støtende fra drivende hund?",["Den støtende arbeider kortere nær føreren","Ingen forskjell","Den drivende brukes bare i vann"],0,"Arbeidsmåte og avstand er ulike.");
 q("7.52",[7],"Hvorfor bør jegeren kjenne hundens losmål?",["For å tolke hundens arbeid","For å velge farge","For å veie sekken"],0,"Stemmen kan gi nyttig informasjon.");
 q("7.53",[7],"Kan hunde-GPS erstatte innkalling og kontroll?",["Nei","Ja, alltid","Bare med fullt batteri"],0,"GPS er bare et hjelpemiddel.");

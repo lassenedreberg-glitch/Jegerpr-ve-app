@@ -865,14 +865,14 @@ window.JEGER_QUESTIONS=[
       2,
       6
     ],
-    "q": "Hvor mange patroner kan en vanlig jakthagle maksimalt være ladd for?",
+    "q": "Hvordan må magasinet på en pumpehagle eller halvautomatisk hagle være begrenset for at hagla skal kunne brukes til jakt?",
     "a": [
-      "Seks",
-      "To",
-      "Fire"
+      "Det må være fysisk begrenset eller plombert til én patron i magasinet og én i kammeret",
+      "Det holder å legge inn bare to patroner, selv om hagla kan ta flere",
+      "Det kan ta tre patroner i magasinet og én i kammeret"
     ],
-    "r": 1,
-    "e": "Hagle til jakt skal ikke kunne lades med mer enn to patroner.",
+    "r": 0,
+    "e": "Ved jakt er hagle for mer enn to skudd forbudt. En pumpehagle eller halvautomatisk hagle må derfor være fysisk begrenset, ofte kalt plombert, slik at den bare kan romme én patron i magasinet og én i kammeret. Det er ikke nok å la være å fylle et større magasin.",
     "m": "65",
     "s": "regelverk",
     "checked": "2026-09-01"
@@ -883,14 +883,14 @@ window.JEGER_QUESTIONS=[
       2,
       6
     ],
-    "q": "Hva må du kontrollere om blyhagl før jakt?",
+    "q": "Hvor nær våtmark gjelder forbudet mot å skyte med blyhagl?",
     "a": [
-      "Om bruken er lovlig på stedet og for jaktformen",
-      "Bare prisen",
-      "Om hylsen er rød"
+      "I våtmark og innenfor 100 meter fra våtmark",
+      "Bare når jegeren står i selve vannet",
+      "Bare innenfor 10 meter fra våtmark"
     ],
     "r": 0,
-    "e": "Blyhagl er blant annet forbudt i og nær våtmark, og regler må sjekkes.",
+    "e": "Det er forbudt å skyte med blyhagl i våtmark og innenfor en sone på 100 meter fra våtmarkens yttergrense. Våtmark er definert bredt og omfatter langt mer enn bare innsjøer.",
     "m": "65",
     "s": "regelverk",
     "checked": "2026-09-01"
@@ -4232,7 +4232,7 @@ window.JEGER_QUESTIONS=[
       "Tar stand og markerer hvor fuglen er"
     ],
     "r": 2,
-    "e": "Stand gir jegeren tid til å nærme seg kontrollert.",
+    "e": "Hunden søker etter fugl ved hjelp av luktesansen. Når den får vitring, stanser den og står stille med kroppen rettet mot fuglen – den tar stand. Jegeren går rolig fram til hunden og gjør seg klar. På signal kan hunden få fuglen til å lette. Før jegeren eventuelt skyter, må fuglen være sikkert artsbestemt, jaktbar og innenfor forsvarlig skuddhold. Jegeren må også kontrollere trygg skuddretning, bakgrunn, andre mennesker og hundens plassering.",
     "m": "22",
     "s": "pensum",
     "checked": "2026-09-01"
